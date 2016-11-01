@@ -78,8 +78,7 @@ def _hooks(path, data):
         return 'error'
 
 if __name__ == '__main__':
-    app.debug = True
-    app.run()
+    app.run(threaded=True, debug=True)
 ```
 保存后，启动服务：
 ```
