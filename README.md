@@ -126,7 +126,7 @@ server {
         listen       80;
         server_name hooks.test.com;  # 修改为服务器的ip或域名
         location / {
-                proxy_pass         http://127.0.0.1:8000/;
+                proxy_pass         http://127.0.0.1:5000/;
                 proxy_redirect     off;
 
                 proxy_set_header   Host             $host;
